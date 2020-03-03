@@ -1,0 +1,7 @@
+name: SpecPlus
+main: com.alexm.specplus.Main
+version: 0.1
+commands:
+    s:
+        description: Switches between spectator and survival mode.
+        usage: /<command>

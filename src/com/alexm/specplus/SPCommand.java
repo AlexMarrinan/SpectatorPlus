@@ -27,7 +27,7 @@ public class SPCommand implements CommandExecutor{
 						float tpYaw = foundPlayer.yaw;
 						player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Set to " + modeToString(foundPlayer.oldMode)));
 						player.teleport((Location) new Location(player.getWorld(), tpX, tpY, tpZ, tpYaw, tpPitch));
-						player.setGameMode(GameMode.SURVIVAL);
+						player.setGameMode(foundPlayer.oldMode);
 						Main.playerCoors.remove(i);
 					}
 				}
